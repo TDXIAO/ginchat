@@ -3,7 +3,7 @@
 ## 后端技术栈：
 ### websocket组件转发消息
 ### channel/goroutine 提高并发性
-### gin，template，swagger，gorm，logger，govalidator，SQL，NoSQL，MQ等
+### gin，template，swagger，gorm，logger，govalidator，SQL，NoSQL，MQ，redis等
 
 ## 功能：
 ### 100W并发高性能网络通信，消息实时推送
