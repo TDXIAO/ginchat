@@ -1,8 +1,3 @@
-/**
-* @Auth:ShenZ
-* @Description:
-* @CreateDate:2022/06/15 17:27:35
- */
 package utils
 
 import (
@@ -11,12 +6,14 @@ import (
 
 type TimerFunc func(interface{}) bool
 
-/**
+/*
+*
 delay  首次延迟
 tick  间隔
 fun  定时执行的方法
 param  方法的参数
-**/
+*
+*/
 func Timer(delay, tick time.Duration, fun TimerFunc, param interface{}) {
 	go func() {
 		if fun == nil {

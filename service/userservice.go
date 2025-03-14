@@ -1,8 +1,3 @@
-/**
-* @Auth:ShenZ
-* @Description:
-* @CreateDate:2022/06/15 14:57:12
- */
 package service
 
 import (
@@ -198,7 +193,7 @@ func UpdateUser(c *gin.Context) {
 
 }
 
-//防止跨域站点伪造请求
+// 防止跨域站点伪造请求
 var upGrader = websocket.Upgrader{
 	CheckOrigin: func(r *http.Request) bool {
 		return true
@@ -272,7 +267,7 @@ func AddFriend(c *gin.Context) {
 	}
 }
 
-//新建群
+// 新建群
 func CreateCommunity(c *gin.Context) {
 	ownerId, _ := strconv.Atoi(c.Request.FormValue("ownerId"))
 	name := c.Request.FormValue("name")
@@ -291,7 +286,7 @@ func CreateCommunity(c *gin.Context) {
 	}
 }
 
-//加载群列表
+// 加载群列表
 func LoadCommunity(c *gin.Context) {
 	ownerId, _ := strconv.Atoi(c.Request.FormValue("ownerId"))
 	//	name := c.Request.FormValue("name")
@@ -303,7 +298,7 @@ func LoadCommunity(c *gin.Context) {
 	}
 }
 
-//加入群 userId uint, comId uint
+// 加入群 userId uint, comId uint
 func JoinGroups(c *gin.Context) {
 	userId, _ := strconv.Atoi(c.Request.FormValue("userId"))
 	comId := c.Request.FormValue("comId")
